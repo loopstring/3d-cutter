@@ -11,4 +11,4 @@ TetMesh<T>(vector<array<T,3>>& nodes, vector<array<int,4>>& mesh)
 
 TriMesh<T>(vector<array<T,3>>& nodes, vector<array<int,3>>& mesh)
 
-main.cpp is an interactive cutting interface that depends on OpenGL and GLUT.
+main.cpp is an interactive cutting interface that depends on OpenGL and GLUT. For usage, look at the comments in the keyboard callback function "void key(unsigned char key, int x, int y)".
