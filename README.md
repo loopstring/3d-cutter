@@ -1,7 +1,7 @@
 # 3d-cutter
 Simplified implementation of the paper "An Adaptive Virtual Node Algorithm with Robust Mesh Cutting" http://www.seas.upenn.edu/~cffjiang/research/cut/paper.pdf. For now it doesn't support robust intersection and cut through node or edge or face, so you will need to perturb your meshes to avoid these degenerate cases if it doesn't split.
 
-Written in C++11, the header only cutter only depend on standard library with a simple interface:
+Written in C++11, the header only cutter only depend on standard library, and it has a simple interface:
 
 TetMesh Cutter3D::run(const TetMesh& tetMesh, const TriMesh& triMesh).
 
