@@ -10,7 +10,11 @@
 #include <limits>
 #include <algorithm>
 #include <iostream>
+#ifdef WIN32
+#include <windows.h>
+#else
 #include <unistd.h>
+#endif
 #include <stack>
 #include <map>
 #include <numeric>
