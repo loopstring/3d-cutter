@@ -36,6 +36,14 @@ using namespace std;
 #define I2 array<int, 2>
 #define I4 array<int, 4>
 
+#ifdef far
+#undef far
+#endif
+
+#ifdef near
+#undef near
+#endif
+
 TetMesh<T> tetMesh;
 TriMesh<T> triMesh;
 
@@ -73,10 +81,10 @@ void simpleTet1() {
     tetMesh.initializeSurfaceMesh();
     tetMesh.computeConnectedComponents();
     
-    triMesh.nodes_.push_back(TV{0.3,-0.1,1.1});
-    triMesh.nodes_.push_back(TV{0.3,-0.1,-1});
-    triMesh.nodes_.push_back(TV{0.3,1.1,1.1});
-    triMesh.nodes_.push_back(TV{0.3,1.1,-1});
+    triMesh.nodes_.push_back(TV{0.3f,-0.1f,1.1f});
+    triMesh.nodes_.push_back(TV{0.3f,-0.1f,-1});
+    triMesh.nodes_.push_back(TV{0.3f,1.1f,1.1f});
+    triMesh.nodes_.push_back(TV{0.3f,1.1f,-1});
     triMesh.mesh_.push_back(I3{0,1,2});
     triMesh.mesh_.push_back(I3{2,3,1});
     
